@@ -1,5 +1,5 @@
-[rfremix-install-media-dvd]
-name=RFRemix Install Media DVD - $basearch
+[zarya-install-media-dvd]
+name=ZOS Zarya Install Media DVD - $basearch
 failovermethod=priority
 baseurl=file:///media/Zarya%206%20$basearch%20DVD/
 enabled=0
