@@ -6,7 +6,7 @@
 
 Name:           zarya-release%{?variant_lowercase:-%{variant_lowercase}}
 Version:        6.0
-Release:        6.0.1.1.Z
+Release:        6.0.1.2.Z
 Summary:        %{product_family}%{?variant_titlecase: %{variant_titlecase}} release file
 Group:          System Environment/Base
 License:        GPLv2
@@ -14,6 +14,8 @@ Obsoletes:      rawhide-release redhat-release-as redhat-release-es redhat-relea
 Provides:       redhat-release system-release
 Source0:        zarya-release%{?variant_lowercase:-%{variant_lowercase}}-%{full_release_version}.tar.gz
 Source1:	zarya-install-media-dvd.repo
+
+Requires:	zarya-config
 
 %description
 %{product_family}%{?variant_titlecase: %{variant_titlecase}} release files
@@ -103,6 +105,10 @@ fi
 /etc/rpm/macros.dist
 
 %changelog
+* Mon Mar 28 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.0-6.0.1.2.Z
+- fix names in media repo file
+- added R zarya-config
+
 * Sun Mar 27 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.0-6.0.1.1.Z
 - Zarya release
 
